@@ -56,3 +56,42 @@ svg {
     margin: -4px;
     align-items: center;
 }
+
+
+
+
+@media screen and (min-width: 425px) {
+    #container {
+        background-color: #101010;
+        width: 140px;
+        height: 65px;
+        border-radius: 30px;
+        position: relative;
+        padding: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .checkbox-label .ball {
+        background-color: #ffffff;
+        width: 60px;
+        height: 55px;
+        position: absolute;
+        left: 6px;
+        top: 5px;
+        border-radius: 30px;
+        transition: transform 0.3s linear;
+    }
+    .checkbox:checked + .checkbox-label .ball {
+        transform: translateX(68px);
+      }
+    svg {
+        height: 100px;
+        width: 100px;
+        fill: rgb(209, 209, 209);
+        padding: 30px;
+        margin: -19px;
+        align-items: center;
+    }
+}
